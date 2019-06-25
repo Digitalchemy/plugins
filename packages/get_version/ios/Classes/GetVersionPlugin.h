@@ -2,3 +2,10 @@
 
 @interface GetVersionPlugin : NSObject<FlutterPlugin>
 @end
+
+@interface NSBundle (Versions)
+
+- (NSString *)releaseVersionNumber;
+- (NSString *)buildVersionNumber;
+
+@end
